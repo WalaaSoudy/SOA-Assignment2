@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+      body 
+      {
+        font-family: 'Arial', sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: #e5e5e5;
+       }
+
+    .container 
+      {
+         max-width: 800px;
+         margin: 190px auto;
+       }
+
+    .hero 
+      {
+        background-color: #003566;
+        color: #fff;
+        text-align: center;
+        padding: 40px;
+      }
+
+    .hero h1 {
+        margin: 0;
+      }
+
+   .cta {
+       text-align: center;
+        margin-top: 20px;
+    }
+
+    .button 
+    {
+         display: inline-block;
+         padding: 15px 25px;
+         background-color: #003566;
+         color: #fff;
+         text-decoration: none;
+         border-radius: 4px;
+         margin: 40px 10px;
+        position: relative;
+        overflow: hidden;
+       transition: background-color 0.3s, color 0.3s;
+    }
+
+    .button:hover 
+     {
+       background-color: #0056b3;
+     }
+
+    .button:before 
+      {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: -100%;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(255, 255, 255, 0.2);
+         transition: left 0.3s;
+      }
+
+    .button:hover:before 
+       {
+          left: 100%;
+       }
+
+   .footer 
+   {
+      text-align: center;
+       margin-top: 20px;
+       padding: 10px;
+       background-color: #003566;
+       color: #fff;
+       position: fixed;
+       bottom: 0;
+       width: 100%;
+    }
+
+    </style>
+    <title>University</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="hero">
+        <h1> Welcome To Our University System</h1>
+     
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+
+        <section class="cta">
+          
+            <h1>Choose option</h1>
+             
+          
+            <a href="addstudent.html" class="button" style="background-color:green">Add New student</a>
+            <a href="search.html" class="button" >Search about student </a>
+            <a href="delete.html" class="button" style="background-color: #BE3144">Delete student</a>
+            <br>
+            <a href="sort.html" class="button" style="background-color: #0096c7">Sort Student File </a>
+            <a href="update.html" class="button" style="background-color:#6c757d" >Update Student Data </a>
+           
+           
+ 
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 Our Student Website. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

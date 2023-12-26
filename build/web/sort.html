@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sort Students</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 600px;
+            margin-left: 480px;
+            margin-top: 40px;
+            padding-left:220px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        .hero 
+        {
+          background-color: #003566;
+          color: #fff;
+          text-align: center;
+          padding: 40px;
+        }
+
+       .hero h1 
+       {
+           margin: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 50%; /* Adjust the width as needed */
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        select
+        {
+             width: 50%;
+             padding:4px; 
+        }
+        input[type="submit"] {
+            background-color: #003566;
+            color: #fff;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin-top: 15px;
+            margin-left: 97px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+     <header class="hero">
+        <h1> Welcome To Our University System</h1>
+     
+    </header>
+    <form action="SortServlet" method="get">
+        <h2> Choose Sort Key </h2>
+        <select name="SortBY">
+           
+            <option value="GPA">GPA</option>
+            <option value="FirstName">First Name</option>
+            <option value="LastName">Last Name</option>
+            <option value="Gender">Gender</option>
+            <option value="Level">Level</option>
+            <option value="Address">Address</option>
+            
+        </select>
+        <br>
+        <h2> Choose Sort Type </h2>
+        <select name="Sorttype">
+            <option value="Ascending">Ascending</option>
+            <option value="descending">descending</option>
+        </select>
+        <input type="hidden" name="action" value="Sort">
+        <input type="submit" value="Sort">
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>SortServlert</servlet-name>
+        <servlet-class>SortServlert</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SortServlet</servlet-name>
+        <servlet-class>SortServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>updateservlet</servlet-name>
+        <servlet-class>updateservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>updateDataservlet</servlet-name>
+        <servlet-class>updateDataservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SortServlert</servlet-name>
+        <url-pattern>/SortServlert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SortServlet</servlet-name>
+        <url-pattern>/SortServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>updateservlet</servlet-name>
+        <url-pattern>/updateservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>updateDataservlet</servlet-name>
+        <url-pattern>/updateDataservlet</url-pattern>
+    </servlet-mapping>
+</web-app>
